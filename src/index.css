@@ -1,13 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+html,
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  overflow: hidden;
+}
+.header {
+  position: fixed;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.header-items {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
+
+.header-item {
+  margin: auto 1em;
+  padding: 1em;
+}
+
+.full-page {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+@import '~antd/dist/antd.css';
+
+html {
+  overflow: hidden;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  position: fixed;
+  /* prevent overscroll bounce*/
+  background-color: #1d1d1d;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+h1{
+  color:rgb(189, 230, 230);
+  font-family: 'Montserrat', sans-serif;
+}
+.menuButton{
+  border: 1px solid #1d1d1d;
+  background-color: transparent;
+  color: #fcfcfc;
+}
+

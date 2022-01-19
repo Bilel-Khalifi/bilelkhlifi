@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import Scroller from "./component/scroller";
+import { Layout } from 'antd';
+// import SiderMenu from "./component/siderMenu";
+import "./index.css";
+import SiderMenu from "./component/siderMenu";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function App() {
+  const {Sider, Content } = Layout;
+  return (
+    <div>
+      <Layout>
+      <Sider style={{background:'#181818' }}>
+        <SiderMenu />
+      </Sider>
+      <Layout>
+        <Content style={{background:'#1d1d1d' }}><Scroller /></Content>
+      </Layout>
+    </Layout>
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);

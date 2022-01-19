@@ -1,0 +1,10 @@
+.menuItems{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.socialIcons {
+  background:#181818;
+  text-align: center;
+  align-items: end;
+}
